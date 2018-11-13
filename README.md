@@ -1,2 +1,2 @@
-# lrush85.github.io
+<!-- # lrush85.github.io -->
 Lance's Portfolio Site
