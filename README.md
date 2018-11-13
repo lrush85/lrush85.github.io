@@ -1,2 +1,2 @@
-# basic-portfolio
-This is the description for basic-portfolio.
+# Lance's Portfolio Site
+This is the description for Lance's Portfolio Site.
