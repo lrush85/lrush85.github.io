@@ -1,15 +1,620 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio Site</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Web Dev Lance</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="intro-name">
+                <p><span class="intro"></span></p>
+                <p class="job-title"></p>
+                </span>
+                <a href="#content">
+                    <button id="intro-button" class="btn btn-primary">
+                        View my work
+                        <p id="arrow"><i class="fa fa-arrow-right"></i></p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ./intro -->
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/images/portfolioimage.png" alt="" style="width: 50%; height: auto; border-radius: 60%">
+                <h3>Lance Rush</h3>
+
+                <strong>LR</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <span>Home</span>
+                        <i class="fas fa-home float-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <span>About</span>
+                        <i class="fas fa-binoculars float-right"></i>
+
+                    </a>
+                    <a href="#experience">
+                        <span>Experience</span>
+                        <i class="fas fa-briefcase float-right"></i>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <span>Portfolio</span>
+                        <i class="fas fa-columns float-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <span>Skills</span>
+                        <i class="fas fa-terminal float-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <span>Education</span>
+                        <i class="fas fa-graduation-cap float-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span>Contact</span>
+                        <i class="fas fa-paper-plane float-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>Resume</span>
+                        <i class="fas fa-file float-right"></i>
+
+                    </a>
+                </li>
+            </ul>
+
+            <p id="copy">Copyright &copy; 2018 </p>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+          <div class="container-fluid">
+              <nav id="navbar-area" class="navbar navbar-expand-lg navbar-light bg-light">
+
+                  <div class="container-fluid">
+  
+                      <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                          <i class="fas fa-arrow-left"></i>
+                          <span>Sidebar</span>
+                      </button>
+                      <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                          aria-label="Toggle navigation">
+                          <i class="fas fa-align-justify"></i>
+                      </button>
+  
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="#about">About</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#experience">Experience</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#skills">Skills</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#education">Education</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#contact">Contact</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+            
+
+            <div class="container-fluid">
+                <h2 id="about">About</h2>
+                <br><br>
+                <p style="padding: 0 20px; font-size: 24px;" class="text-justify">I've always had a passion to build things. Even when I was younger, I always wondered, "what if ...
+                    I could (fill in the blank)". Although, in my younger years I took the easier route with my career
+                    path, which is what took me so long to get here. You know what they say... nothing worth having comes
+                    easy. So I took a bootcamp with KU (University of Kansas) and I now have a pretty awesome
+                    portfolio.</p>
+                <br><br>
+                <p style="padding: 0 20px; font-size: 24px;" class="text-justify">As a web developer, I find myself looking at web sites thinking I could make this function/look so
+                    much better. I am a driven individual that searches out for a way to master my skills. If I don't
+                    know the answer, my motto is "I will find it!"</p>
+
+                <div class="line"></div>
+
+                <h2 id="experience">Experience</h2>
+                
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Volunteer - Website Setup/Design</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">State Line Remedy</h5>
+                        <p class="card-text">Worked with local band to design and set up website for future gigs and to
+                            help drive traffic to the website. Used WordPress to develop a design and functionality to
+                            the site. Still provide updates or other items they may need to improve the site.</p>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Volunteer - Website Redesign</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Code for KC - Civic Coding</h5>
+                        <p class="card-text">Joined a Meetup group and helped with overall design of website. They
+                            wanted a refresh to provide the site with a more modern look. Work isn't finished yet, plan
+                            to complete the assistance in the near future. </p>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <h2 id="portfolio">Portfolio</h2>
+                
+                <br>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/hang-man.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The Office Trivia</h5>
+                            <p class="card-text"><strong>Bootstrap CSS</strong></p>
+                            <p>UX/UI using <strong>jQuery</strong></p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/lrush85/TriviaGame" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="https://lrush85.github.io/TriviaGame/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/rpg-game.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Word Guessing Game</h5>
+                            <p class="card-text">
+                                <strong>Bootstrap CSS</strong> frontend</p>
+                            <p>UI/UX using <strong>jQuery</strong></p>
+                            <p>NFL theming</p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/lrush85/word-guess-game" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="https://lrush85.github.io/word-guess-game/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/rps.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Giphy App</h5>
+                            <p class="card-text"><strong>Bootstrap CSS</strong> frontend</p>
+                            <p>UX/UI using <strong>jQuery</strong></p>
+                            <p>Themed <strong>Nintendo Games</strong> </p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/lrush85/giphy-app" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="https://lrush85.github.io/giphy-app/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <br>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/train-time.jpeg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Train Time</h5>
+                            <p class="card-text"><strong>Bootstrap CSS </strong>frontend</p>
+                            <p>UX/UI using <strong>jQuery</strong></p>
+                            <p>Firebase database</p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/lrush85/train-time/" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="https://lrush85.github.io/train-time/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/rpgGame.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Crystal Collector</h5>
+                            <p class="card-text"><strong>Bootstrap CSS</strong></p>
+                            <p>UX/UI using <strong>jQuery</strong></p>
+                            <p>Random number per <strong>crystal</strong>  and have to equal the random number.</p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/lrush85/unit-4-game" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="https://lrush85.github.io/unit-4-game/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/LOGO.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Step2Goal</h5>
+                            <p class="card-text"><strong>Bootstrap CSS</strong></p>
+                            <p>UX/UI using <strong>jQuery</strong></p>
+                            <p>Multiple <strong>API</strong> calls with Google and Fitbit</p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/rpr8605/steps2goal" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="https://rpr8605.github.io/steps2goal/" target="_blank"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/liri-screencast.gif" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">LIRI Bot</h5>
+                            <p class="card-text"><strong>Node JS</strong>Backend</p>
+                            <p>Spotify<strong>API</strong></p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/lrush85/liri-node-app" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="#">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/triviaGame.jpg" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Placehoder</h5>
+                            <p class="card-text"><strong>Placeholder Other</strong></p>
+                            <p>Placeholder <strong>Other</strong></p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="#">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/tech-gif.gif" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Placeholder</h5>
+                            <p class="card-text"><strong>Placeholder Other</strong></p>
+                            <p>Placeholder <strong>Other</strong></p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="#"">
+                                    <i class="fab fa-github"></i>
+                                </a>
+
+                                <a class="float-right" href="#"">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <h2 id="skills">Skills</h2>
+                <br>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card border-primary mb-3">
+                                <div class="card-header text-center">
+                                    <h3>HTML</h3>
+                                </div>
+                                <div class="card-body text-primary">
+                                    <div class="row">
+                                        <div class="col-md-2 col-lg-2">
+                                            <img class="img-inline" src="./assets/images/html5.png" alt="">
+                                        </div>
+                                        <div class="col-md-2 col-lg-2">
+                                            <img src="./assets/images/jekyll.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- HTML -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card border-success mb-3">
+                                <div class="card-header text-center">
+                                    <h3>CSS & Design</h3>
+                                </div>
+                                <div class="card-body text-success">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-3 offset-lg-0 offset-md-0 offset-sm-1">
+                                            <img class="img-inline" src="./assets/images/css3.png" alt="">
+                                        </div>
+                                        <div class="col-lg-1 col-md-3 offset-sm-2">
+                                            <img src="./assets/images/bootstrap.png" alt="">
+                                        </div>
+                                        <div class="col-lg-1 col-md-3 offset-sm-2">
+                                            <img src="./assets/images/materialize-2.png" style="width: 200px; height: auto;" alt="">
+                                        </div>
+                                        <div class="col-lg-1 col-md-3 offset-sm-2">
+                                            <img src="./assets/images/photoshop.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- CSS -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card border-danger mb-3">
+                                <div class="card-header text-center">
+                                    <h3>JavaScript</h3>
+                                </div>
+                                <div class="card-body text-danger">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-md-1 offset-lg-0 offset-md-0 offset-sm-1">
+                                            <img class="img-inline" src="./assets/images/javascript.png" alt="">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 offset-sm-2">
+                                            <img src="./assets/images/jquery.png" alt="">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 offset-sm-2">
+                                            <img src="./assets/images/nodejs.png" alt="">
+                                        </div>
+                                        <div class="col-lg-1 col-md-1 offset-sm-2">
+                                            <img src="./assets/images/react.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Javascript -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card border-warning mb-3">
+                                <div class="card-header text-center"><h3>CMS</h3></div>
+                                <div class="card-body text-warning">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img class="img-inline" src="./assets/images/wordpress.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <!-- CMS  -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card border-info mb-3">
+                                <div class="card-header text-center"><h3>Version Control & Deployment</h3></div>
+                                <div class="card-body text-info">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-4">
+                                            <img class="img-inline" src="./assets/images/github.png" alt="">
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-4">
+                                            <img src="./assets/images/heroku.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Verison Control & Development -->
+
+                <br>
+
+                <div class="line"></div>
+
+                <h2 id="education">Education</h2>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card border-dark mb-3">
+                            <div class="card-header"><img class="rounded-circle" src="./assets/images/ku-icon.png" alt=""
+                                    style="width: 65px; height: 60px"></div>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">University of Kansas</h5>
+                                <p class="card-text">MERN Stack Bootcamp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card border-dark mb-3">
+                            <div class="card-header"><img class="rounded-circle" src="./assets/images/mssu-logo.png"
+                                    alt="" style="width: 4rem; height: auto;"></div>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Missouri Southern State University</h5>
+                                <p class="card-text">BSBA in Human Resource Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card border-dark mb-3">
+                            <div class="card-header"><img class="rounded-circle" src="./assets/images/south-university.jpeg"
+                                    alt="" style="width: 4rem; height: auto;"></div>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">South University</h5>
+                                <p class="card-text">AS in Business Administration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <h2 id="contact">Contact</h2>
+                <br>
+                <br>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">First Name</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Last Name</label>
+                            <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Message</label>
+                        <textarea class="form-control" id="textArea" placeholder="Write me a message..." rows="28"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-danger">Sign in</button>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+                $('#copy').toggleClass('active');
+                $('#intro-button').toggleClass('active');
+            });
+
+            $("#intro-button").hover(
+                function () {
+                    $("#arrow").css({
+                        "transform": "rotate(90deg)",
+                        "transition": "all 0.5s"
+                    });
+                },
+
+                function () {
+                    $("#arrow").css({
+                        "transform": "rotate(-360deg)",
+                    });
+                });
+
+        });
+    </script>
 </body>
 
 </html>
