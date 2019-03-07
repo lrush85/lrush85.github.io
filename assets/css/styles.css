@@ -410,10 +410,15 @@ a.article:hover {
         display: none;
     }
 
+
     #copy {
         text-align: center; 
         font-size: 12px; 
         margin-top: 24vh;
+    }
+
+    div#intro-name {
+        display: none;
     }
 
     #intro-name {
