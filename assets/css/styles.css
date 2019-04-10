@@ -269,6 +269,14 @@ a.article:hover {
     margin-top: 29vh;
 }
 
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
 /* ---------------------------------------------------
     INTRO STYLE
 ----------------------------------------------------- */
