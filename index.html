@@ -2,11 +2,19 @@
 <html>
 
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Web Dev Lance</title>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
@@ -15,21 +23,41 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
 
-
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
-
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
-
 
 </head>
 
 <body>
+    <nav id="navbar-area" class="navbar navbar-expand-lg trans">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarItem" aria-controls="navbarItem" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarItem">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link trans" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link trans" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link trans" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link trans" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link trans" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link trans" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="container-fluid">
         <div class="row">
@@ -48,14 +76,18 @@
     </div>
     <!-- ./intro -->
 
+    <div class="line"></div>
+
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <img src="./assets/images/portfolioimage.png" alt="" style="width: 50%; height: auto; border-radius: 60%">
                 <h3>Lance Rush</h3>
+                <p class="text-center">Full-Stack Web Developer</p>
+                <hr>
 
-                <strong>LR</strong>
+                <span><strong>LR</strong></span>
+                <hr id="below-initials">
             </div>
 
             <ul class="list-unstyled components">
@@ -109,9 +141,11 @@
                     </a>
                 </li>
             </ul>
+            <hr>
             <div id="footer-content">
             <a href="https://www.linkedin.com/in/lance-rush"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.github.com/lrush85"><i class="fab fa-github"></i></a>
+            <hr>
             <p id="copy">Copyright &copy; 2018 </p>
             <div>
             
@@ -120,58 +154,18 @@
         <!-- Page Content  -->
         <div id="content">
 
-          <div class="container-fluid">
-              <nav id="navbar-area" class="navbar navbar-expand-lg navbar-light bg-light">
-
-                  <div class="container-fluid">
-  
-                      <button type="button" id="sidebarCollapse" class="btn btn-dark">
-                          <i class="fas fa-arrow-left"></i>
-                          <span>Sidebar</span>
-                      </button>
-                      <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
-                          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                          aria-label="Toggle navigation">
-                          <i class="fas fa-align-justify"></i>
-                      </button>
-  
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="nav navbar-nav ml-auto">
-                              <li class="nav-item active">
-                                  <a class="nav-link" href="#about">About</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#experience">Experience</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#skills">Skills</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#education">Education</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#contact">Contact</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </nav>
-          </div>
             
 
             <div class="container-fluid">
-                <h2 id="about">About</h2>
+                <h2 class="anchor" id="about">About</h2>
                 <br><br>
-                <p style="padding: 0 20px; font-size: 24px;" class="text-justify">I've always had a passion to build things. Even when I was younger, I always wondered, "what if ...
+                <p style="padding: 0 20px; font-size: 1.3rem;" class="text-justify">I've always had a passion to build things. Even when I was younger, I always wondered, "what if ...
                     I could (fill in the blank)". Although, in my younger years I took the easier route with my career
                     path, which is what took me so long to get here. You know what they say... nothing worth having comes
                     easy. So I took a bootcamp with KU (University of Kansas) and I now have a pretty awesome
                     portfolio.</p>
                 <br><br>
-                <p style="padding: 0 20px; font-size: 24px;" class="text-justify">As a web developer, I find myself looking at web sites thinking I could make this function/look so
+                <p style="padding: 0 20px; font-size: 1.3rem;" class="text-justify">As a web developer, I find myself looking at web sites thinking I could make this function/look so
                     much better. I am a driven individual that searches out for a way to master my skills. If I don't
                     know the answer, my motto is "I will find it!"</p>
 
@@ -207,9 +201,77 @@
 
                 <div class="line"></div>
 
-                <h2 id="portfolio">Portfolio</h2>
+                <h2 class="anchor" id="portfolio">Portfolio</h2>
                 
                 <br>
+
+                <!-- Group Projects -->
+                <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/LOGO.jpg" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Step2Goal</h5>
+                                <p class="card-text"><strong>Bootstrap CSS</strong></p>
+                                <p>UX/UI using <strong>jQuery</strong></p>
+                                <p>Multiple <strong>API</strong> calls with Google and Fitbit</p>
+                            </div>
+                            <div class="card-text">
+                                <div class="card-footer">
+                                    <a href="https://github.com/rpr8605/steps2goal" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+    
+                                    <a class="float-right" href="https://rpr8605.github.io/steps2goal/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/images/rxfm.png" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">RX|FM</h5>
+                                <p class="card-text"><strong>Bootstrap</strong></p>
+                                <p>Node JS, <strong>SQL, Express.js, </strong>and handlebars</p>
+                            </div>
+                            <div class="card-text">
+                                <div class="card-footer">
+                                    <a href="https://github.com/lrush85/RXFM">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                        
+                                    <a class="float-right" href="https://ancient-dawn-39175.herokuapp.com/">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img id="capture-me" class="card-img-top" src="./assets/images/capturemelogo.png" alt="Card image cap">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CaptureMe</h5>
+                                <p class="card-text"><strong>ReactJS</strong></p>
+                                <p>UX/UI using <strong>Okta</strong></p>
+                                <p>Multiple <strong>API</strong> calls with Google OCR</p>
+                                <p><strong>Mongo</strong>DB, Express, Draggable</p>
+                            </div>
+                            <div class="card-text">
+                                <div class="card-footer">
+                                    <a href="https://github.com/kupharmd05/CaptureMe" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+    
+                                    <a class="float-right" href="https://mysterious-sierra-84651.herokuapp.com/" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                <!-- Individual Projects -->
+
                 <div class="card-deck">
                     <div class="card">
                         <img class="card-img-top" src="./assets/images/hang-man.jpg" alt="Card image cap">
@@ -272,6 +334,9 @@
                 </div>
                 
                 <br>
+
+                <!-- Other Individual Projects -->
+
                 <div class="card-deck">
                     <div class="card">
                         <img class="card-img-top" src="./assets/images/train-time.jpeg" alt="Card image cap">
@@ -312,29 +377,6 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="./assets/images/LOGO.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Step2Goal</h5>
-                            <p class="card-text"><strong>Bootstrap CSS</strong></p>
-                            <p>UX/UI using <strong>jQuery</strong></p>
-                            <p>Multiple <strong>API</strong> calls with Google and Fitbit</p>
-                        </div>
-                        <div class="card-text">
-                            <div class="card-footer">
-                                <a href="https://github.com/rpr8605/steps2goal" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-
-                                <a class="float-right" href="https://rpr8605.github.io/steps2goal/" target="_blank"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <br>
-                <div class="card-deck">
-                    <div class="card">
                         <img class="card-img-top" src="./assets/images/liri-screencast.gif" alt="Card image cap">
                         <div class="card-body text-center">
                             <h5 class="card-title">LIRI Bot</h5>
@@ -348,6 +390,29 @@
                                 </a>
 
                                 <a class="float-right" href="#">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="./assets/images/main-burger-spot.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Burger Spot</h5>
+                            <p class="card-text"><strong>Bootstrap</strong></p>
+                            <p>Node JS, <strong>SQL, Express.js, </strong>and handlebars</p>
+                        </div>
+                        <div class="card-text">
+                            <div class="card-footer">
+                                <a href="https://github.com/lrush85/burger">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                    
+                                <a class="float-right" href="https://intense-eyrie-70094.herokuapp.com/">
                                     <i class="fas fa-external-link-alt"></i>
                                 </a>
                             </div>
@@ -393,50 +458,11 @@
                     </div>
                 </div>
 
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="./assets/images/main-burger-spot.png" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Burger Spot</h5>
-                            <p class="card-text"><strong>Bootstrap</strong></p>
-                            <p>Node JS, <strong>SQL, Express.js, </strong>and handlebars</p>
-                        </div>
-                        <div class="card-text">
-                            <div class="card-footer">
-                                <a href="https://github.com/lrush85/burger">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                    
-                                <a class="float-right" href="https://intense-eyrie-70094.herokuapp.com/">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="./assets/images/rxfm.png" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">RX|FM</h5>
-                            <p class="card-text"><strong>Bootstrap</strong></p>
-                            <p>Node JS, <strong>SQL, Express.js, </strong>and handlebars</p>
-                        </div>
-                        <div class="card-text">
-                            <div class="card-footer">
-                                <a href="https://github.com/lrush85/RXFM">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                    
-                                <a class="float-right" href="https://ancient-dawn-39175.herokuapp.com/">
-                                    <i class="fas fa-external-link-alt"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <br>
 
                 <div class="line"></div>
 
-                <h2 id="skills">Skills</h2>
+                <h2 class="anchor" id="skills">Skills</h2>
                 <br>
 
                     <div class="row">
@@ -496,17 +522,17 @@
                                 </div>
                                 <div class="card-body text-danger">
                                     <div class="row">
-                                        <div class="col-lg-1 col-md-1 offset-lg-0 offset-md-0 offset-sm-1">
+                                        <div class="col-lg-1 col-md-1 col-xs-3 offset-lg-0 offset-md-0 offset-sm-1">
                                             <img class="img-inline" src="./assets/images/javascript.png" alt="">
                                         </div>
-                                        <div class="col-lg-1 col-md-1 offset-sm-2">
-                                            <img src="./assets/images/jquery.png" alt="">
+                                        <div class="col-lg-1 col-md-1 col-xs-3 offset-sm-2">
+                                            <img class="img-inline" src="./assets/images/jquery.png" alt="">
                                         </div>
-                                        <div class="col-lg-1 col-md-1 offset-sm-2">
-                                            <img src="./assets/images/nodejs.png" alt="">
+                                        <div class="col-lg-1 col-md-1 col-xs-3 offset-sm-2">
+                                            <img class="img-inline" src="./assets/images/nodejs.png" alt="">
                                         </div>
-                                        <div class="col-lg-1 col-md-1 offset-sm-2">
-                                            <img src="./assets/images/react.png" alt="">
+                                        <div class="col-lg-1 col-md-1 col-xs-3 offset-sm-2">
+                                            <img class="img-inline" src="./assets/images/react.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -555,7 +581,7 @@
 
                 <div class="line"></div>
 
-                <h2 id="education">Education</h2>
+                <h2 class="anchor" id="education">Education</h2>
                 <br>
                 <div class="row">
                     <div class="col-md-12">
@@ -598,26 +624,26 @@
 
                 <div class="line"></div>
 
-                <h2 id="contact">Contact</h2>
+                <h2 class="anchor" id="contact">Contact</h2>
                 <br>
                 <br>
-                <form>
+                <form action="https://formspree.io/lance.rush1@gmail.com" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">First Name</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="First Name">
+                            <input name="first-name" type="text" class="form-control" id="fname" placeholder="First Name">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Last Name</label>
-                            <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name">
+                            <input name="last-name" type="text" class="form-control" id="lname" placeholder="Last Name">
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputAddress">Message</label>
-                        <textarea class="form-control" id="textArea" placeholder="Write me a message..." rows="28" style="height: 300px;"></textarea>
+                        <textarea name="message" class="form-control" id="textArea" placeholder="Write me a message..." rows="28" style="height: 300px;"></textarea>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-danger">Send Message</button>
+                    <button id="submit" type="submit" class="btn btn-danger">Send Message</button>
                 </form>
                 <br>
             </div>
@@ -635,6 +661,7 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+
         $(document).ready(function () {
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
@@ -658,6 +685,32 @@
                 });
 
         });
+
+        $(window).scroll(function() {
+            var offset = $(window).scrollTop();
+            console.log(offset);
+            $('.navbar').toggleClass('trans', offset < 650);
+            $('a.nav-link').toggleClass('trans', offset < 650);
+        });
+
+        function offsetAnchor() {
+            if (location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 100);
+            }
+            }
+
+            // Captures click events of all <a> elements with href starting with #
+            $(document).on('click', 'a[href^="#"]', function(event) {
+            // Click events are captured before hashchanges. Timeout
+            // causes offsetAnchor to be called after the page jump.
+            window.setTimeout(function() {
+                offsetAnchor();
+            }, 0);
+            });
+
+            // Set the offset when entering page with hash present in the url
+            window.setTimeout(offsetAnchor, 0);
+
     </script>
 </body>
 
