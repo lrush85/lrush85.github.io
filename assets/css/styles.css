@@ -46,6 +46,10 @@ a.nav-link.trans {
     color: #fff !important;
 }
 
+#navbar-area {
+    display: none;
+}
+
 
 .navbar-btn {
     box-shadow: none;
@@ -388,6 +392,10 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 1028px) {
+
+    #navbar-area {
+        display: block;
+    }
     #sidebar {
         min-width: 80px;
         max-width: 80px;
@@ -505,4 +513,5 @@ a.article:hover {
     }
     
 }
+
 

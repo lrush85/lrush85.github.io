@@ -683,11 +683,13 @@
                         "transform": "rotate(-360deg)",
                     });
                 });
+            
 
         });
 
         $(window).scroll(function() {
             var offset = $(window).scrollTop();
+            var viewportWidth = $(window.innerWidth);
             console.log(offset);
             $('.navbar').toggleClass('trans', offset < 650);
             $('a.nav-link').toggleClass('trans', offset < 650);
